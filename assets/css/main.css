@@ -1424,6 +1424,86 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Thank You Page Styles
+--------------------------------------------------------------*/
+.thank-you-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: var(--light-background);
+  padding: 80px 0;
+}
+
+.thank-you-section .icon-box {
+  margin-bottom: 30px;
+}
+
+.thank-you-section .icon-box i {
+  font-size: 80px;
+  color: var(--primary-color);
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.thank-you-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.thank-you-section .lead {
+  font-size: 20px;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+.thank-you-section .impact-quote {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--dark-text);
+  margin: 40px auto;
+  max-width: 700px;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 20px;
+  text-align: left;
+}
+
+.thank-you-section .impact-quote footer {
+  font-size: 18px;
+  font-style: normal;
+  color: var(--secondary-color);
+  margin-top: 15px;
+  text-align: right;
+}
+
+.thank-you-section .btn-return-home {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: var(--light-text);
+  background: var(--accent-color);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.thank-you-section .btn-return-home:hover {
+  background: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 /* .starter-section {
